@@ -23,7 +23,7 @@ You probably want to persist some directories like `/workspace` and `/root/.code
 
     $ docker run -d -p 8080:80 \
         -v $PWD/workspace:/workspace \
-        -v $PWD/codebox-home:/root/ \
+        -v $PWD/codebox-home:/root \
         wernight/codebox \
         run /workspace --port=80 --users user1:passwd1,user2:passwd2
 
