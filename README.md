@@ -19,9 +19,13 @@ How to use this image
 
 Wait a few seconds and open `http://localhost:8080/` in your browser.
 
-You probably want to mount `/workspace` somewhere locally to persist it, and set up authentication:
+You probably want to persist some directories like `/workspace` and `/root/.codebox`, and set up authentication:
 
-    $ docker run -d -p 8080:80 -v $PWD/workspace:/workspace wernight/codebox run /workspace --port=80 --users user1:passwd1,user2:passwd2
+    $ docker run -d -p 8080:80 \
+        -v $PWD/workspace:/workspace \
+        -v $PWD/codebox-config:/root/.codebox \
+        wernight/codebox \
+        run /workspace --port=80 --users user1:passwd1,user2:passwd2
 
 
 User Feedback
