@@ -3,6 +3,8 @@
 # See https://www.reddit.com/r/webdev/comments/41wyfe/completely_stuck_trying_to_install_codebox/
 FROM node:0.10
 
+ENV ARGS="--port=80 --users user1:pass1,user2:pass2"
+
 RUN set -x \
     # Install Codebox.
  && npm install -g codebox \
@@ -20,4 +22,4 @@ RUN set -x \
 VOLUME ["/workspace"]
 EXPOSE 80
 ENTRYPOINT ["dumb-init"]
-CMD ["codebox", "run", "/workspace", "--port=80"]
+RUN codebox run /workspace $ARGS
