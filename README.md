@@ -4,7 +4,7 @@ FORKED FROM : https://github.com/wernight/docker-codebox
 Supported tags and respective `Dockerfile` links
 ================================================
 
-  * [`latest`](https://github.com/monkeycompany/docker-codebox/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/monkeycompany/codebox.svg)](http://microbadger.com/images/monkeycompany/codebox "Get your own image badge on microbadger.com")
+* [`latest`](https://github.com/monkeycompany/docker-codebox/blob/master/Dockerfile) [![](https://images.microbadger.com/badges/image/monkeycompany/codebox.svg)](http://microbadger.com/images/monkeycompany/codebox "Get your own image badge on microbadger.com")
 
 
 What is Codebox?
