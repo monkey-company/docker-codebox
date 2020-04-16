@@ -22,4 +22,4 @@ RUN set -x \
 VOLUME ["/workspace"]
 EXPOSE 80
 ENTRYPOINT ["dumb-init"]
-RUN codebox run /workspace $ARGS
+RUN codebox run /workspace $ARGS; exit 0
